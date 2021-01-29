@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <script src="https://kit.fontawesome.com/043e51ac62.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cairo&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+    integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+
+  <title></title>
+</head>
+
+<body>
+  <div class="mt-5 mb-5 white-section container">
+    <div class="head-section align-middle container">
+      <h1>Användarhanterare</h1> 
+      <div class="p-class d-flex justify-content-between">
+      <p class="ml-4"><i class="fas fa-long-arrow-alt-down"></i> Registrera din användarinformation nedan <i class="fas fa-long-arrow-alt-down"></i></p>
+      <p class="save"><i class="fas fa-long-arrow-alt-down"></i> Här nedan sparas dina resultat <i class="fas fa-long-arrow-alt-down"></i></p>
+    </div>
+    </div>
+  </div>
+  <div class="flex-section d-flex container justify-content-between">
+    <div class="form-section-1 col-5 ">
+      <form id="formGroup" class="row g-3 formulär d-flex justify-content-center ">
+        <div class="förnamn col-6 mt-3">
+          <label for="förnamn" class="form-label"></label>
+          <input type="text" class="form-control form-input" id="inputförnamn" placeholder="Förnamn"><small id="errorFirstname">Error meddelande</small>
+        </div>
+        <div class="col-6 mt-3 efternamn">
+          <label for="efternamn" class="form-label"></label>
+          <input type="text" class="form-control form-input" id="inputefternamn" placeholder="Efternamn"><small id="errorLastname">Error meddelande</small>
+        </div>
+        <div class="email col-12">
+          <label for="inputEmail4" class="form-label "></label>
+          <input type="email" name="email" class="form-control form-input" id="inputEmail4" placeholder="Email"><small id="errorEmail">Error meddelande</small>
+        </div>
+        <div class="col-12 d-flex justify-content-center mt-4">
+          <button id="showList" class="btn btn-dark mb-4" type="submit">Visa i lista</button>
+        </div>
+      </form>
+
+    </div>
+
+    <div class="form-section-2 col-5">
+      
+      <div id="outputList" class="mt-5">
+        <div class="removing bg-white border rounded p-2 d-flex justify-content-between align-items-center "><p class="mb-0 para" >Förnamn Efternamn<br><span>email@example.com</span></p> 
+          <div class="ml-5 d-flex">
+          <button id="editbtn" class="btn btn-dark"><i class="fas fa-edit"></i></button>
+          <button id="trashbtn" class="ml-1 btn btn-dark"><i class="fas fa-trash-alt"></i></button>
+        </div>
+        </div>
+        </div>
+    </div>
+  </div>
+  </div>
+
+
+
+
+
+
+
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+    crossorigin="anonymous"></script>
+  <script src=script.js></script>
+</body>
+
+</html>
