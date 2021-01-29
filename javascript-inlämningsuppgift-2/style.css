@@ -1,0 +1,48 @@
+body {
+    background-image:url(./cool-background\ \(1\).png)
+}
+.savedTodo 
+{
+    background-color: white;
+    width: auto;
+    padding:0.5rem;
+    cursor: pointer;
+}
+#trashBtn{
+    border:none;
+    background-color: white;
+    outline:none; 
+    text-decoration:none;
+}
+#trashBtn i
+{
+    font-size: 1.5rem;
+}
+#trashBtn:hover{
+    color:grey;
+}
+#small{
+    color:darkred;
+    font-size: 16px;
+    display: none;
+}
+body{
+    font-family: 'Playfair Display', serif;
+}
+
+#addBtn:focus {
+    outline: none !important;
+  }
+#completeButton{
+    outline:none;
+    border:none;
+    background-color: white;
+}
+#completeButton:focus {
+    outline: none !important;
+  }
+
+  .circle{
+    font-size: 2rem;
+    color:lightgray;   
+  }
