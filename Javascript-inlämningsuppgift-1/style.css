@@ -1,8 +1,6 @@
 body{
-    background-image: url(../Javascript/images/pexels-zaksheuskaya-1568607.jpg);
-    background-position: center;
-     background-repeat: no-repeat;
-     background-size: cover;
+    background: rgb(238,174,202);
+background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
     }
     .head-section{
         font-family: 'Cairo', sans-serif;

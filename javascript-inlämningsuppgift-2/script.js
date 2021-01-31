@@ -12,7 +12,7 @@ todoObjects.forEach(todoObject => {
     <div class="savedTodo d-flex rounded justify-content-between align-items-center" id="todoText">
         <button id="completeButton"><i class="circle completedCircle pr-3 check fas fa-check-circle"></i></button>
          <p class="textP align-middle mb-0">${todoObject.title}</p>
-            <button id="trashBtn"class="align-items-center d-flex pl-3"><i class="fas fa-trash"></i></button>
+            <button id="trashBtn"class="align-items-center d-flex pl-3"><i class="knapp fas fa-trash"></i></button>
         </div>
         </div>`
 })
@@ -64,8 +64,20 @@ inputBtn.addEventListener ('click', e =>{
 outputDiv.addEventListener('click', e =>{
     e.preventDefault()
     if(e.target.classList.contains('textP')){
-        e.target.classList.add('lined')
         e.target.style.textDecoration = 'line-through' 
-        }
-        
+        e.target.classList.add('lined')
+        e.target.classList.remove('textP')
+        completed:true
+       }  
+       else if(e.target.classList.contains('lined')){
+        e.target.style.textDecoration = 'none'
+        e.target.classList.add('textP')
+        completed: false
+       }
+})
+outputDiv.addEventListener('click', e =>{
+    e.preventDefault()
+    if(e.target.classList.contains('knapp')){
+      
+    }
 })

@@ -32,7 +32,7 @@ function validateFirstname () {
     }
     if (inputFirstname.value.length < 2) {
         errorFirstname.style.visibility = 'visible'
-        document.getElementById('errorFirstname').innerHTML = ('För kort namn. Minst 2 bokstäver!') 
+        document.getElementById('errorFirstname').innerHTML = ('För kort namn. Minst 2 tecken!') 
         return false
 
     }
@@ -52,7 +52,7 @@ function validateLastname (){
     }
     if (inputLastname.value.length < 2) {
         errorLastname.style.visibility = 'visible'
-        document.getElementById('errorLastname').innerHTML = ('För kort namn. Minst 2 bokstäver!')
+        document.getElementById('errorLastname').innerHTML = ('För kort namn. Minst 2 tecken!')
         return false
     }
     else {
@@ -101,4 +101,5 @@ button.addEventListener('click', (event) => {
     e.preventDefault()
     lista() 
  })
+ 
  

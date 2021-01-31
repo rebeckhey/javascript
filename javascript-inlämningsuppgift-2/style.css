@@ -41,7 +41,6 @@ body{
 #completeButton:focus {
     outline: none !important;
   }
-
   .circle{
     font-size: 2rem;
     color:lightgray;   
