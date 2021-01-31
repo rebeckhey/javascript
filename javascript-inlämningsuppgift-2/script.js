@@ -75,9 +75,3 @@ outputDiv.addEventListener('click', e =>{
         completed: false
        }
 })
-outputDiv.addEventListener('click', e =>{
-    e.preventDefault()
-    if(e.target.classList.contains('knapp')){
-      
-    }
-})
